@@ -1,0 +1,5 @@
+.footer {
+    background-color: cornflowerblue;
+    grid-area: footer;
+    text-align: center;
+}

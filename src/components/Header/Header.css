@@ -1,0 +1,11 @@
+.header {
+    background-color: antiquewhite;
+    grid-area: header;
+    text-align: center;
+
+}
+.header img {
+    width: 50px;
+}
+
+

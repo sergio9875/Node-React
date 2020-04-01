@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+//import Navbar from './components/Navbar/Navbar';
+import Login from "./components/Login/Login";
+//import Football from './components/Footbals/Football'
+import {  Route } from 'react-router-dom';
+//import Basketball from './components/Profile/Basketball';
+import Registration from "./components/Registration/Registration";
 
-function App() {
+// App  - Arrow Function
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+        <div className='app-wrapper'>
+          <Header />
+          {/*<Navbar />*/}
+          {/*<div className='app-wrapper-content'>*/}
+            {/*<Route exact path='/football' component={Football} />*/}
+            {/*<Route path='/basketball' component={Basketball} />*/}
+            <Route path='/login' component={Login} />
+            <Route path='/registration' component={Registration} />
+
+
+          {/*</div>*/}
+          <Footer />
+        </div>
+
+  )
 }
 
 export default App;
