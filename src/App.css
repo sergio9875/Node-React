@@ -3,13 +3,13 @@
     grid-template-areas: "header  " " content  " "footer  ";
 
     display: grid;
-    grid-template-rows:2fr 6fr 4fr;
+    grid-template-rows:2fr 8fr 2fr;
     grid-template-columns: 100%;
     grid-gap: 10px;
 
 
     height: 100vh;
-    /*margin: 0 auto*/
+    margin: 0 auto;
 
 
 }

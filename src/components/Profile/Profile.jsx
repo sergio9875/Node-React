@@ -1,14 +1,15 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts'
-import Basketball from './Basketball'
+// import Basketball from './Basketball'
 
-const Profile = () => {
+const Profile = (props) => {
+
     return (
         <div >
-            <Basketball />,
-
-
-            <MyPosts />
+            {/*<Basketball />,*/}
+            <MyPosts posts={props.profilePage.posts}
+                     newPostText={props.profilePage.newPostText}  // - value in textarea
+                     dispatch={props.dispatch} />
         </div>
     )
 }

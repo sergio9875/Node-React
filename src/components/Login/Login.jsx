@@ -1,12 +1,12 @@
 import React from "react";
-import style from './Login.css';
+import './Login.css';
 import {
     MDBContainer,
     MDBRow,
     MDBCol,
     MDBCard,
     MDBCardBody,
-    MDBModalFooter,
+    // MDBModalFooter,
     MDBIcon,
     MDBCardHeader,
     MDBBtn,
