@@ -1,15 +1,14 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts'
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 // import Basketball from './Basketball'
 
-const Profile = (props) => {
-
+const Profile = () => {
     return (
         <div >
             {/*<Basketball />,*/}
-            <MyPosts posts={props.profilePage.posts}
-                     newPostText={props.profilePage.newPostText}  // - value in textarea
-                     dispatch={props.dispatch} />
+            <MyPostsContainer  />
+
         </div>
     )
 }

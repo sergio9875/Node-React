@@ -1,31 +1,33 @@
 .app-wrapper {
+display: grid;
+    grid-template-areas:
+            "header header header"
+            "nav content content"
+            "footer footer footer" ;
 
-    grid-template-areas: "header  " " content  " "footer  ";
-
-    display: grid;
-    grid-template-rows:2fr 8fr 2fr;
-    grid-template-columns: 100%;
-    grid-gap: 10px;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 2fr 7fr 3fr;
 
 
+    /*grid-row-gap: 10px;*/
+    /*grid-column-gap: 10px;*/
     height: 100vh;
-    margin: 0 auto;
+    margin: 0;
 
 
 }
 
 
-/*.app-wrapper-content {*/
+.app-wrapper-content {
 
-/*    !*position: fixed;*!*/
-/*    !*left:0;*!*/
-/*    !*right:0;*!*/
-/*    !*top:0;*!*/
+    /*position: fixed;*/
+    /*left:0;*/
+    /*right:0;*/
+    /*top:0;*/
 
-/*!*background-color: coral;*!*/
-/*  grid-area: content;*/
+  grid-area: content;
 
 
-/*}*/
+}
 
 

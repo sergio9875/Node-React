@@ -1,5 +1,15 @@
-.footer {
-    background-color: cornflowerblue;
+.footer-icons {
     grid-area: footer;
     text-align: center;
+    background-color: darkcyan;
+}
+
+/*.footer-icons a {*/
+/*    padding-left: 20px;*/
+/*}*/
+
+.footer-icons img {
+    width: 60px;
+    height: 60px;
+
 }
