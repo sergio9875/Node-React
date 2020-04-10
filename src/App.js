@@ -9,6 +9,8 @@ import {Route} from 'react-router-dom';
 //import Basketball from './components/Profile/Basketball';
 import Registration from "./components/Registration/Registration";
 import Profile from "./components/Profile/Profile";
+import UsersContainer from "./components/Users/UsersContainer";
+import LoginContainer from "./components/Login/LoginContainer";
 
 
 // App  - Arrow Function
@@ -24,8 +26,10 @@ const App = () => {
                 <Route exact  path='/' render={() => < Profile />}/>
 
                 <Route path='/football' component={Football}/>
-                <Route path='/login' component={Login}/>
+                <Route path='/login' component={LoginContainer}/>
                 <Route path='/registration' component={Registration}/>
+                <Route path='/users'
+                       render={ () => <UsersContainer /> } />
 
 
             </div>

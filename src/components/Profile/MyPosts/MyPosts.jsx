@@ -1,10 +1,10 @@
-import React from 'react';
-import Post from './Post/Post'
+import React from "react";
+import Post from './Post/Post';
 import './MyPosts.css';
 
 
 const MyPosts = (props) => {
-    debugger;
+
 
     let postsElement = props.posts.map((p, index) =>
         < Post key={index} message={p.message}/>)

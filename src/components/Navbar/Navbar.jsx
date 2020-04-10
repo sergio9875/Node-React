@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className={s.item}>
                 <NavLink to="/football" activeClassName={s.activeLink}>Football</NavLink></div>
             <div className={s.item}>
-                <NavLink to="/basketball" activeClassName={s.activeLink}>Basketball</NavLink></div>
+                <NavLink to="/users" activeClassName={s.activeLink}>Users</NavLink></div>
         </nav >);
 }
 
